@@ -6,8 +6,6 @@ cd /tmp/
 wget http://packages.erlang-solutions.com/erlang-solutions-1.0-1.noarch.rpm
 sudo rpm -Uvh erlang-solutions-1.0-1.noarch.rpm
 sudo yum -y install erlang socat logrotate
-
-cd /tmp/
 wget https://github.com/rabbitmq/rabbitmq-server/releases/download/v3.8.8/rabbitmq-server-3.8.8-1.el6.noarch.rpm
 sudo rpm --import https://www.rabbitmq.com/rabbitmq-signing-key-public.asc
 sudo rpm -Uvh rabbitmq-server-3.8.8-1.el6.noarch.rpm
