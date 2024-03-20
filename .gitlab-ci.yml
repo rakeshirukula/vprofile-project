@@ -1,0 +1,14 @@
+run_tests:
+  stage: test
+  image: maven:3-jdk-8
+  before_script:
+    - apt-get update -y 
+  script:
+    - mvn clean install 
+build_code :
+  stage : build
+  image : maven:3-jdk-8
+  before_script:
+    - apt-get update -y 
+  script:
+    -  mvn clean install 
